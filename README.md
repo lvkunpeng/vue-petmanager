@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # vueAdmin-template
 
 喷火龙nb
@@ -38,3 +39,7 @@ npm run build --report
 
 ## License
 [MIT](https://github.com/PanJiaChen/vueAdmin-template/blob/master/LICENSE) license.
+=======
+# vue-petmanager
+Vue background management system.
+>>>>>>> b126ad76fed0c7e93cbdeb1df6e821753a00e6f0
