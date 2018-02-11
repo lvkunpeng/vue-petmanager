@@ -1,0 +1,26 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [{
+      "name": "Debug Vue-cli",
+      //调试的类型，vscode天生支持node,比如go,php,chrome这些就依赖插件啦      
+      "type": "chrome",
+      // request : 配置文件的请求类型，有launch和attach两种
+      // launch模式：由 vscode 来启动一个独立的具有 debug 模式的程序
+      // attach模式：附加于（也可以说“监听”）一个已经启动的程序
+      "request": "launch",
+      // url:这个是chrome插件带的，指定访问的链接
+      "url": "http://localhost:9528",
+      // sourceMaps:默认是启用的，对于打包的调试，小伙伴们必须开启
+      "sourceMaps": true,
+      // webRoot：也是chrome插件带的，指定根目录或者执行文件
+      "webRoot": "${workspaceRoot}",
+      // userDataDir：临时目录,专门保存调试过程产生的东西
+      "userDataDir": "${workspaceRoot}/.vscode/chrome",
+      "sourceMapPathOverrides": {
+        "/source/*": "${workspaceRoot}/*"
+      }
+    }]
+}
